@@ -37,7 +37,7 @@ export default function Navbar() {
         <CustomLink to="/services">Usługi</CustomLink>
         <img src={logo} alt="logo" />
         <CustomLink to="/realizations">Realizacje</CustomLink>
-        <CustomLink to="/contact">Kontakt</CustomLink>
+        <CustomLink to="/contact" className="kontakt-link">Kontakt</CustomLink>
       </ul>
     </div>
 

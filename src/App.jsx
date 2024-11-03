@@ -11,17 +11,20 @@ function App() {
 
   return (
     <>
-    
-   <Navbar/>
-   <div className='container'>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/home' element={<Home/>} />
-        <Route path='/services' element={<Services/>} />
-        <Route path='/realizations' element={<Realizations/>} />
-        <Route path='/contact' element={<Contact/>} />
-      </Routes>
-   </div>
+    <div className='container'>
+      <Navbar/>
+      <div className='navbar-links'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/home' element={<Home/>} />
+          <Route path='/services' element={<Services/>} />
+          <Route path='/realizations' element={<Realizations/>} />
+          <Route path='/contact' element={<Contact/>} />
+        </Routes>
+      </div>
+    </div>
+ 
+
    </>
   )
 }
