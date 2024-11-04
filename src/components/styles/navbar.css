@@ -4,6 +4,8 @@
   justify-content: space-between;
   top: 0; 
   background-color: #fff; 
+  position: fixed;
+  width: 100%;
 }
 
 .navbar ul {
@@ -27,11 +29,18 @@
   margin-right: 20px; 
 }
 
+.navbar-links a:hover {
+  text-decoration: underline;
+}
 .kontakt-link {
   background-image: linear-gradient(to right, #3D4656, #00ADFC);
   padding: 6px 26px; 
   border-radius: 25px; 
   
+}
+
+.kontakt-link:hover {
+  text-decoration: underline;
 }
 .navbar-links a {
   color: black;

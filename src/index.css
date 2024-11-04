@@ -5,7 +5,7 @@ html, body {
 }
 
 * {
-  background-color: white;
+  background-color: rgb(255, 131, 131);
   font-family: "Raleway", serif;
   box-sizing: border-box; 
   margin: 0;

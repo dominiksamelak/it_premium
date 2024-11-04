@@ -8,20 +8,20 @@ export default function Footer() {
           <img src={logo} alt="logo" />
         </div>
         <div className="about-us">
+          <span className="footer-bold">O Nas</span>
           <span>Kontakt</span>
-          <span>Kontakt</span>
-          <span>Kontakt</span>
-          <span>Kontakt</span>
-          <span>Kontakt</span>
+          <span>Recenzje klientów</span>
+          <span>Realizacje</span>
+          <span className="application-form">Formularz zgłoszenia</span>
         </div>
         <div className="services">
-          <span>Kontakt</span>
-          <span>Kontakt</span>
-          <span>Kontakt</span>
-          <span>Kontakt</span>
-          <span>Kontakt</span>
-          <span>Kontakt</span>
-          <span>Kontakt</span>
+          <span className="footer-bold">Usługi</span>
+          <span>Naprawa komputerów</span>
+          <span>Naprawa telefonów</span>
+          <span>Naprawa drukarek</span>
+          <span>Odzyskiwanie danych</span>
+          <span>Obsługa firm</span>
+          <span>Naprawa elektorniki użytkowej</span>
         </div>
         <div className="location">
           <iframe
