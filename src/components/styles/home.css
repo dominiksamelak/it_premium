@@ -4,7 +4,6 @@
   align-items: center;
   height: auto;  
   width: 100vw;
-  height: auto;
 }
 
 .landing-photo-container {
@@ -30,7 +29,6 @@
   background-color: transparent;
 }
 
-/* Optional: Style each text element */
 .text-title {
   font-size: 2em;
   font-weight: bold;
@@ -75,36 +73,71 @@
   font-weight: bold;
 }
 
-.description-one, .description-two {
-  display: flex;
-  flex: row;
-  align-items: center; 
-  border: solid;
-}
-
-.color-updown {
-  height: 260px;
-  width: 10px;
-  background-image: linear-gradient(to top, #3D4656, #00ADFC);
-}
-
-.description-one-container{
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
 .description {
   display: flex;
   justify-content: center;
   height: auto;
   flex-direction: column;
   align-items: center;
+  max-width: 970px; /* Limit maximum width for smaller screens */
+  margin: 0 auto; /* Center the div */
 }
 
-.desc-photo-one {
- display: inline-block;
- margin: 0;
- height: auto;  
+.description-one, .description-two {
+  display: flex;
+  flex: row;
+  align-items: center; 
+  justify-content: space-between;
+  border: solid;
+  width: 100%;
+  margin: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  gap: 0; 
+}
+
+.color-updown {
+  height: 310px;
+  width: 10px;
+  background-image: linear-gradient(to top, #3D4656, #00ADFC);
+  margin-right: 10px;
+}
+
+.color-updown-two {
+  background-image: linear-gradient(to top, #00ADFC, #3D4656);
+  height: 310px;
+  width: 10px;
+}
+
+.description-one-container, .description-two-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 350px;
+}
+
+.description-one-container{
+  padding-left: 20px;
+}
+
+.description-two-container{
+  margin-top: 20px;
+}
+
+.description-text-one, .description-text-two, .description-text-three {
+  white-space: normal; /* Ensure text wraps within its container */
+  word-wrap: break-word; /* Force long words to wrap if needed */
+  overflow-wrap: break-word; /* Adds compatibility for long words */
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.desc-photo {
+  margin-left: 76px;
+  margin-right: 76px;
+}
+
+.google-reviews-desc {
+  padding: 2px;
 }

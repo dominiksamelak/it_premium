@@ -6,6 +6,7 @@
 .navbar-links {
   display: flex;
   flex: 1;
+  height: auto;
 }
 
 .container {

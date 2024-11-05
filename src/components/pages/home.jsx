@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { ReactGoogleReviews } from "react-google-reviews";
+import "react-google-reviews/dist/index.css";
 import landingPhoto from "../img/landing_photos/landingpage-main.png"
 import "../styles/home.css"
 import descPhotoOne from "../img/home/desc-photo-one.png"
@@ -22,20 +24,33 @@ export default function Home() {
     <div className="description-one">
       <span className='color-updown'></span>
       <div className="description-one-container">
-        <span className='description-text-one'>testtesttesttesttest</span>
-        <span className='description-text-two'>testtesttesttesttesttesttesttesttesttesttesttest</span>
-        <span className='description-text-three'>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
+        <span className='description-text-one'>lorem </span>
+        <span className='description-text-two'>lorem lorem lorem lorem lorem lorem </span>
+        <span className='description-text-three'>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </span>
       </div>
-      <img src={descPhotoOne} alt="photo" className='desc-photo-one' />
+      <img src={descPhotoOne} alt="photo" className='desc-photo' />
     </div>
     <div className="description-two">
-      <img src={descPhotoTwo} alt="photo" className='desc-photo-one' />
-      <div className="description-one-container">
+      <img src={descPhotoTwo} alt="photo" className='desc-photo' />
+      <div className="description-two-container">
         <span className='description-text-one'>testtesttesttesttest</span>
         <span className='description-text-two'>testtesttesttesttesttesttesttesttesttesttesttest</span>
         <span className='description-text-three'>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
+        <div className="google-reviews-desc">
+          <ReactGoogleReviews 
+            layout="badge" 
+            featurableId="w8ddkxl3-sfnc04..."
+          />
+        </div>
+
       </div>
-      <span className='color-updown'></span>
+      <span className='color-updown-two'></span>
+    </div>
+    <div className='google-reviews'>
+      <ReactGoogleReviews 
+        layout="carousel" 
+        featurableId="w8ddkxl3-sfnc04..."
+      />
     </div>
   </div>
 </div>

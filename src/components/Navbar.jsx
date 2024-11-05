@@ -1,10 +1,11 @@
 import { Link, useResolvedPath, useMatch } from "react-router-dom"
 import "./styles/navbar.css"
-import  mail from "./img/icons/Mail.png"
-import  mapPin from "./img/icons/Map_Pin.png"
-import  phone from "./img/icons/Phone.png"
-import  facebook from "./img/icons/Social icons.png"
+import mail from "./img/icons/Mail.png"
+import mapPin from "./img/icons/Map_Pin.png"
+import phone from "./img/icons/Phone.png"
+import facebook from "./img/icons/Social icons.png"
 import logo from "./img/icons/logo_navbar.png"
+
 export default function Navbar() {
   return <nav className="navbar">
     <div className="navbar-top">
@@ -40,7 +41,6 @@ export default function Navbar() {
         <CustomLink to="/contact" className="kontakt-link">Kontakt</CustomLink>
       </ul>
     </div>
-
   </nav>
 }
 
