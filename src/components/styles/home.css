@@ -81,6 +81,7 @@
   align-items: center;
   max-width: 970px; /* Limit maximum width for smaller screens */
   margin: 0 auto; /* Center the div */
+  
 }
 
 .description-one, .description-two {
@@ -88,12 +89,13 @@
   flex: row;
   align-items: center; 
   justify-content: space-between;
-  border: solid;
+  /* border: solid; */
   width: 100%;
   margin: 0;
   padding-left: 2px;
   padding-right: 2px;
   gap: 0; 
+  padding-top: 20px;
 }
 
 .color-updown {
@@ -143,5 +145,5 @@
 }
 
 .google-reviews .slick-dots {
-  display: none;
+  display: none !important;
 }
