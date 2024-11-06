@@ -19,7 +19,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -51,6 +50,7 @@
   border-radius: 4px; 
   display: inline-block; 
   margin: 5px 0; 
+  color: white; 
 }
 
 .application-form {
@@ -146,4 +146,61 @@
 
 .google-reviews .slick-dots {
   display: none !important;
+}
+
+.google-reviews .css-2xmatf {
+  max-width: 970px;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.google-reviews .css-hzpebr, .google-reviews .css-1en7e4i{
+  display: none;
+}
+.description-text-three {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.warranty {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  max-width: 970px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+
+}
+
+.color-updown-warranty {
+  height: 310px;
+  width: 10px;
+  background-image: linear-gradient(to top, #3D4656, #00ADFC);
+
+}
+
+.color-updown-two-warranty {
+  background-image: linear-gradient(to top, #00ADFC, #3D4656);
+  height: 310px;
+  width: 10px;
+
+}
+
+.warranty-desc {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.warranty-text, .warranty-title{
+  margin-bottom: 10px;
+}
+
+.warranty-title {
+  font-size: 24px;
+  font-weight: bold;
 }

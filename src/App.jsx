@@ -22,7 +22,7 @@ function App() {
     <>
     <div className='container'>
       <Navbar/>
-      <div className='navbar-links'>
+      <main className='navbar-links'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/home' element={<Home/>} />
@@ -37,7 +37,7 @@ function App() {
           <Route path='/printerfix' element={<Printers/>} />
           <Route path='/contact' element={<Contact/>} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </div>
  
