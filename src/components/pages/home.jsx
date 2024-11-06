@@ -39,7 +39,7 @@ export default function Home() {
         <div className="google-reviews-desc">
           <ReactGoogleReviews 
             layout="badge" 
-            featurableId="w8ddkxl3-sfnc04..."
+            featurableId="f9a57238-df62-4c52-8448-6d9130fdedd3"
           />
         </div>
 
@@ -49,7 +49,7 @@ export default function Home() {
     <div className='google-reviews'>
       <ReactGoogleReviews 
         layout="carousel" 
-        featurableId="w8ddkxl3-sfnc04..."
+        featurableId="f9a57238-df62-4c52-8448-6d9130fdedd3"
       />
     </div>
   </div>

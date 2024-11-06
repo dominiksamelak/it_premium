@@ -141,3 +141,7 @@
 .google-reviews-desc {
   padding: 2px;
 }
+
+.google-reviews .slick-dots {
+  display: none;
+}
