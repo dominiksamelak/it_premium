@@ -12,7 +12,7 @@ export default function Home() {
   <div className="landing-photo-container">
     <img src={landingPhoto} alt="main" className="landing-photo" />
     <div className="text">
-      <span className="text-title">Test</span>
+      <span className="text-title">Messi to karzeł a Barca to chuj</span>
       <span className="text-subtitle">Test Test Test Test Test Test Test Test Test Test</span>
       <span className="text-description">
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
