@@ -143,5 +143,5 @@
 }
 
 .google-reviews .slick-dots {
-  display: none;
+  display: none !important;
 }
