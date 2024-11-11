@@ -1,0 +1,43 @@
+.price-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+.price-item {
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 1px solid;  
+}
+
+.item-name {
+  margin-left: 80px;
+}
+
+.price {
+  color: gray;
+  margin-right: 80px;
+}
+
+.item-name, .price {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 12px;
+}
+
+.price-list-shadow {
+  display: flex;
+  flex-direction: column;
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 24px;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+}
+

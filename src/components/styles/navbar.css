@@ -1,4 +1,4 @@
-.navbar {
+.navbar-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,8 +56,8 @@
 }
 
 .logo {
-  margin-left: 64px;
-  margin-right: 76px;
+  padding-bottom: 44px;
+  z-index: 1001;
 }
 
 .navbar-links li:last-child {
@@ -78,8 +78,30 @@
   justify-content: space-between;
   align-items: center;
   height: 52px;
-  border-bottom: 1px groove #333; 
+  position: relative;
 }
+
+.navbar-top::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 46%;
+  height: 1px;
+  background: linear-gradient(to right, #3D4656, 50%, #1F7AA9, #00cafc);
+
+}
+
+.navbar-top::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 47%;
+  height: 1px;
+  background: linear-gradient(to right, #00cafc, #1F7AA9, 50%, #3D4656);
+}
+
 
 .mappin-icon, .mail-icon, .phone-icon {
   margin-right: 6px;

@@ -8,39 +8,42 @@ import logo from "./img/icons/logo_navbar.png"
 
 export default function Navbar() {
   return <nav className="navbar">
-    <div className="navbar-top">
-      <div className="navbar-phone-number">
-        <span className="phone-icon">
-          <img src={phone} alt="phone" /> 
-        </span>
-        <span className="phone-number">
-          +48 784 784 957
-        </span>
+    <div className="navbar-container">
+      <div className="navbar-top">
+        <div className="navbar-phone-number">
+          <span className="phone-icon">
+            <img src={phone} alt="phone" /> 
+          </span>
+          <span className="phone-number">
+            +48 784 784 957
+          </span>
+        </div>
+        <div className="navbar-socials">
+          <span>
+            <img className="mappin-icon" src={mapPin} alt="pin" /> 
+          </span>
+          <span>
+            <img className="mail-icon" src={mail} alt="mail" /> 
+          </span>
+          <span className="mail-adress">
+            biuro@it-premium.pl
+          </span>
+          <span>
+            <img className="facebook-icon" src={facebook} alt="facebook" /> 
+          </span>
+        </div>
       </div>
-      <div className="navbar-socials">
-        <span>
-          <img className="mappin-icon" src={mapPin} alt="pin" /> 
-        </span>
-        <span>
-          <img className="mail-icon" src={mail} alt="mail" /> 
-        </span>
-        <span className="mail-adress">
-          biuro@it-premium.pl
-        </span>
-        <span>
-          <img className="facebook-icon" src={facebook} alt="facebook" /> 
-        </span>
+      <div className="navbar-bottom">
+        <ul className="navbar-links">
+          <CustomLink to="/home">Strona główna</CustomLink>
+          <CustomLink to="/services">Usługi</CustomLink>
+          <img src={logo} alt="logo" className="logo"/>
+          <CustomLink to="/realizations">Realizacje</CustomLink>
+          <CustomLink to="/contact" className="kontakt-link">Kontakt</CustomLink>
+        </ul>
       </div>
     </div>
-    <div className="navbar-bottom">
-      <ul className="navbar-links">
-        <CustomLink to="/home">Strona główna</CustomLink>
-        <CustomLink to="/services">Usługi</CustomLink>
-        <img src={logo} alt="logo" className="logo"/>
-        <CustomLink to="/realizations">Realizacje</CustomLink>
-        <CustomLink to="/contact" className="kontakt-link">Kontakt</CustomLink>
-      </ul>
-    </div>
+    
   </nav>
 }
 

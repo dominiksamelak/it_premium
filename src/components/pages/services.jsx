@@ -65,7 +65,14 @@ export default function Services() {
         <img src={Other} alt="other" className='pic-right'/>
         <span className='up-down'></span>
       </div>
-
+      <div className="services-contact">
+        <span className='services-contact-text'>
+          W razie jakichkolwiek pytań, zapraszamy do kontaktu
+        </span>
+        <span className='services-contact-button'>
+          Kontakt
+        </span>
+      </div>
     </div>
   )
 }
