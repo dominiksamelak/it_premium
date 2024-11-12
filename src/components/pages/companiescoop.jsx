@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Company from "../img/landing_photos/company-main.png"
 import "../styles/company.css"
 
