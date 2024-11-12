@@ -54,6 +54,10 @@
   flex-direction: column;
 }
 
+.services-text {
+  text-align: left; 
+}
+
 .services-text-right {
   margin-left: 120px;
 }
@@ -62,12 +66,16 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+  text-align: left;
+   display: block; 
 }
 
 .services-text-desc {
   flex-grow: 1; 
   min-width: 0; 
   max-width: 450px;
+   display: block; 
+  text-align: left;
   overflow-wrap: break-word; 
   word-wrap: break-word; 
   word-break: break-word; 

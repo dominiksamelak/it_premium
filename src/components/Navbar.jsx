@@ -20,7 +20,10 @@ export default function Navbar() {
         </div>
         <div className="navbar-socials">
           <span>
-            <img className="mappin-icon" src={mapPin} alt="pin" /> 
+            <a href="https://www.google.pl/maps/place/IT-PREMIUM+Centrum+Serwisowe+Serwis+laptop%C3%B3w,+telefon%C3%B3w,+drukarek%2FPROFESJONALNE+ODZYSKIWANIE+DANYCH/@52.4610174,16.9073041,17z/data=!4m6!3m5!1s0x4704436aa34834f1:0x72038cebaf375f7!8m2!3d52.4610142!4d16.909879!16s%2Fg%2F11cryfrr66?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+              <img className="mappin-icon" src={mapPin} alt="pin" /> 
+            </a>
+            
           </span>
           <span>
             <img className="mail-icon" src={mail} alt="mail" /> 

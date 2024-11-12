@@ -30,7 +30,7 @@ function App() {
           <Route path='/pcfix' element={<PC/>} />
           <Route path='/applicationform' element={<AppForm/>} />
           <Route path='/companiescoop' element={<ComapniesCoop/>} />
-          <Route path='/daterecovery' element={<DataRecovery/>} />
+          <Route path='/datarecovery' element={<DataRecovery/>} />
           <Route path='/otherfix' element={<OtherElectronics/>} />
           <Route path='/phonefix' element={<Phone/>} />
           <Route path='/printerfix' element={<Printers/>} />

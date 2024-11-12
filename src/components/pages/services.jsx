@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { Link, useResolvedPath, useMatch } from "react-router-dom"
 import PC from "../img/services/pc.png"
 import Phone from "../img/services/phone.png"
 import Data from "../img/services/data.png"
@@ -15,7 +15,7 @@ export default function Services() {
         <span className='down-up'></span>
         <img src={PC} alt="pc" className='pic-left'/>
         <div className="services-text">
-          <span className='services-text-title'>Naprawa komputerów</span>
+          <CustomLink to="/pcfix" className='services-text-title'><span >Naprawa komputerów</span></CustomLink>
           <span className='services-text-desc'>testtesttesttesttesttesttesttesttesttesttesttesttesttestt
             esttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
         </div>
@@ -75,4 +75,17 @@ export default function Services() {
       </div>
     </div>
   )
+
+    function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  
+    return (
+      <li className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
+    )
+  }
 }

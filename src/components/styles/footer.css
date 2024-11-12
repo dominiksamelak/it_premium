@@ -1,11 +1,14 @@
 .footer-container {
   display: flex;
   flex-direction: column;
-  max-width: 970px;
-  margin: 0 auto;
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-line {
+  width: 100vw;
+  background-image: linear-gradient(to left, #00cafc, #67bbe6, 50%, #728097);
+  height: 2px;
+  margin-bottom: 20px ;
 }
 
 .footer-items {
@@ -14,6 +17,11 @@
   justify-content: center;
   margin-bottom: 20px; 
   width: 100%; 
+  max-width: 970px;
+  margin: 0 auto;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 20px;
 }
 
 .footer-container .footer-items li {
