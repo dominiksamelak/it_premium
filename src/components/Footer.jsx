@@ -21,7 +21,7 @@ export default function Footer() {
           <CustomLink to="/pcfix">Naprawa komputerów</CustomLink>
           <CustomLink to="/phonefix">Naprawa telefonów</CustomLink>
           <CustomLink to="/printerfix">Naprawa drukarek</CustomLink>
-          <CustomLink to="/datarec">Odzyskiwanie danych</CustomLink>
+          <CustomLink to="/datarecovery">Odzyskiwanie danych</CustomLink>
           <CustomLink to="/companiescoop">Obsługa firm</CustomLink>
           <CustomLink to="/otherfix">Naprawa elektroniki użytkowej</CustomLink>
         </ul>

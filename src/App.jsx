@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Home from "./components/pages/home"
 import Contact from "./components/pages/contact"
@@ -7,7 +6,7 @@ import Services from "./components/pages/services"
 import PC from "./components/pages/pcfix"
 import AppForm from "./components/pages/applicationform"
 import ComapniesCoop from "./components/pages/companiescoop"
-import DataRecovery from "./components/pages/datarec"
+import DataRecovery from "./components/pages/Datarecovery"
 import OtherElectronics from "./components/pages/otherfix"
 import Phone from "./components/pages/phonefix"
 import Printers from "./components/pages/printerfix"
@@ -31,7 +30,7 @@ function App() {
           <Route path='/pcfix' element={<PC/>} />
           <Route path='/applicationform' element={<AppForm/>} />
           <Route path='/companiescoop' element={<ComapniesCoop/>} />
-          <Route path='/daterec' element={<DataRecovery/>} />
+          <Route path='/daterecovery' element={<DataRecovery/>} />
           <Route path='/otherfix' element={<OtherElectronics/>} />
           <Route path='/phonefix' element={<Phone/>} />
           <Route path='/printerfix' element={<Printers/>} />

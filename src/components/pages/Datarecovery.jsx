@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react';
-import Company from "../img/landing_photos/company-main.png"
-import "../styles/company.css"
+import DataRec from "../img/landing_photos/datarec-main.png"
+import "../styles/datarec.css"
 
-export default function ComapniesCoop() {
+export default function DataRecovery() {
   return(
-    <div className="company-container">
+    <div className="datarec-container">
         <div className="landing-photo-container">
-          <img src={Company} alt="company" className='company-landing-photo'/>
+          <img src={DataRec} alt="datarec" className='datarec-landing-photo'/>
           <div className="text">
           <span className="text-title">TEST</span>
           <span className="text-subtitle">Test Test Test Test Test Test Test Test Test Test</span>
