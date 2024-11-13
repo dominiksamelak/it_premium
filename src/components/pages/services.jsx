@@ -15,14 +15,14 @@ export default function Services() {
         <span className='down-up'></span>
         <img src={PC} alt="pc" className='pic-left'/>
         <div className="services-text">
-          <CustomLink to="/pcfix" className='services-text-title'><span >Naprawa komputerów</span></CustomLink>
+          <CustomLink to="/pcfix" className='services-text-link'><span className='services-text-title'>Naprawa komputerów</span></CustomLink>
           <span className='services-text-desc'>testtesttesttesttesttesttesttesttesttesttesttesttesttestt
             esttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
         </div>
       </div>
       <div className="services-right">
         <div className="services-text-right">
-          <span className='services-text-title'>Naprawa telefonów</span>
+         <CustomLink to="/phonefix" className='services-text-link'><span className='services-text-title'>Naprawa telefonów</span></CustomLink>
           <span className='services-text-desc'>testtesttesttesttesttesttesttesttesttesttesttesttesttestt
             esttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
         </div>
@@ -33,14 +33,14 @@ export default function Services() {
         <span className='down-up'></span>
         <img src={Printer} alt="printer" className='pic-left'/>
         <div className="services-text">
-          <span className='services-text-title'>Naprawa drukarek</span>
+          <CustomLink to="/printerfix" className='services-text-link'><span className='services-text-title'>Naprawa drukarek</span></CustomLink>
           <span className='services-text-desc'>testtesttesttesttesttesttesttesttesttesttesttesttesttestt
             esttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
         </div>
       </div>
       <div className="services-right">
         <div className="services-text-right">
-          <span className='services-text-title'>Odzyskiwanie danych</span>
+          <CustomLink to="/datarecovery" className='services-text-link'><span className='services-text-title'>Odzyskiwanie danych</span></CustomLink>
           <span className='services-text-desc'>testtesttesttesttesttesttesttesttesttesttesttesttesttestt
             esttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
         </div>
@@ -51,14 +51,14 @@ export default function Services() {
         <span className='down-up'></span>
         <img src={Coop} alt="coop" className='pic-left'/>
         <div className="services-text">
-          <span className='services-text-title'>Obsługa firm</span>
+          <CustomLink to="/companiescoop" className='services-text-link'><span className='services-text-title'>Obsługa firm</span></CustomLink>
           <span className='services-text-desc'>testtesttesttesttesttesttesttesttesttesttesttesttesttestt
             esttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
         </div>
       </div>
       <div className="services-right">
         <div className="services-text-right">
-          <span className='services-text-title'>Naprawa elektroniki użytkowej</span>
+          <CustomLink to="/otherfix" className='services-text-link'><span className='services-text-title'>Naprawa elektroniki użytkowej</span></CustomLink>
           <span className='services-text-desc'>testtesttesttesttesttesttesttesttesttesttesttesttesttestt
             esttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</span>
         </div>
@@ -76,16 +76,16 @@ export default function Services() {
     </div>
   )
 
-    function CustomLink({ to, children, ...props }) {
-    const resolvedPath = useResolvedPath(to)
-    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
-  
+  function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
     return (
-      <li className={isActive ? "active" : ""}>
+      <div className={isActive ? "active" : ""}>
         <Link to={to} {...props}>
           {children}
         </Link>
-      </li>
-    )
+      </div>
+    );
   }
 }

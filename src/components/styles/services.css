@@ -52,6 +52,7 @@
 .services-text, .services-text-right {
   display: flex;
   flex-direction: column;
+  align-items: flex-start; 
 }
 
 .services-text {
@@ -67,7 +68,26 @@
   font-weight: bold;
   margin-bottom: 20px;
   text-align: left;
-   display: block; 
+  display: block;
+}
+
+.services-text-title:hover {
+  color: #00ADFC;
+}
+
+.services-text-link {
+  margin: 0;
+  text-decoration: none;
+}
+
+.services-text-link:hover {
+  color: #00ADFC;
+  text-decoration: underline;
+}
+
+.services-text-link:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 .services-text-desc {
@@ -116,3 +136,4 @@
   text-decoration: underline;
   cursor: pointer;
 }
+

@@ -14,6 +14,14 @@
   padding: 0; 
   margin: 0; 
 }
+.form-group-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.form-group {
+  flex: 1; 
+}
 
 .navbar-links {
   list-style: none;
@@ -24,26 +32,27 @@
   padding: 0; 
   margin: 0; 
   height: 52px;
-}
-
-.navbar-links li {
-  margin-right: 20px; 
-}
-
-.navbar-links a:hover {
-  text-decoration: underline;
-}
-.kontakt-link {
-  background-image: linear-gradient(to right, #3D4656, #00ADFC);
-  padding: 6px 26px; 
-  border-radius: 25px; 
   
 }
 
-.kontakt-link:hover {
+.navbar-links-list {
+  margin-right: 20px; 
+  text-decoration: none;
+}
+
+.navbar-links-list:hover {
   text-decoration: underline;
 }
-.navbar-links a {
+.navbar-link-contact {
+  background-image: linear-gradient(to right, #3D4656, #00ADFC);
+  padding: 6px 26px; 
+  border-radius: 25px; 
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.navbar-link-text {
   color: black;
   text-decoration: none;
   font-weight: 600;
@@ -51,17 +60,18 @@
   margin-right: 54px;
 }
 
-.navbar-links .kontakt-link {
+.navbar-links .navbar-link-contact {
   color: white; 
+  text-decoration: none;
+}
+
+.navbar-link-contact:hover {
+  text-decoration: underline;
 }
 
 .logo {
   padding-bottom: 44px;
   z-index: 1001;
-}
-
-.navbar-links li:last-child {
-  margin-right: 0; 
 }
 
 .navbar-bottom {

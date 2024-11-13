@@ -38,11 +38,11 @@ export default function Navbar() {
       </div>
       <div className="navbar-bottom">
         <ul className="navbar-links">
-          <CustomLink to="/home">Strona główna</CustomLink>
-          <CustomLink to="/services">Usługi</CustomLink>
+          <CustomLink to="/home" className="navbar-links-list"><span className="navbar-link-text">Strona główna</span></CustomLink>
+          <CustomLink to="/services" className="navbar-links-list"><span className="navbar-link-text">Usługi</span></CustomLink>
           <img src={logo} alt="logo" className="logo"/>
-          <CustomLink to="/realizations">Realizacje</CustomLink>
-          <CustomLink to="/contact" className="kontakt-link">Kontakt</CustomLink>
+          <CustomLink to="/realizations" className="navbar-links-list"><span className="navbar-link-text">Realizacje</span></CustomLink>
+          <CustomLink to="/contact" className="contakt-link-list"><span className="navbar-link-contact">Kontakt</span></CustomLink>
         </ul>
       </div>
     </div>

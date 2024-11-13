@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { Link, useResolvedPath, useMatch } from "react-router-dom"
 import { ReactGoogleReviews } from "react-google-reviews";
 import "react-google-reviews/dist/index.css";
 import landingPhoto from "../img/landing_photos/landingpage-main.png"
@@ -17,7 +17,7 @@ export default function Home() {
       <span className="text-description">
         Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
       </span>
-      <span className='application-form'>Formularz zgłoszenia</span>
+      <CustomLink to="/applicationform" className="appllication-link"><span className='application-form'>Formularz zgłoszenia</span></CustomLink>
     </div>
   </div>
   <div className="description">
@@ -69,4 +69,17 @@ export default function Home() {
   </div>
 </div>
   )
+
+    function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+    return (
+      <div className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </div>
+    );
+  }
 }
