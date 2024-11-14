@@ -6,8 +6,8 @@ import phone from "./img/icons/Phone.png"
 import facebook from "./img/icons/Social icons.png"
 import logo from "./img/icons/logo_navbar.png"
 
-export default function Navbar() {
-  return <nav className="navbar">
+export default function Navbar({ isVisible }) {
+  return <nav className={`navbar ${isVisible ? 'visible' : ''}`}>
     <div className="navbar-container">
       <div className="navbar-top">
         <div className="navbar-phone-number">
@@ -36,6 +36,11 @@ export default function Navbar() {
           </span>
         </div>
       </div>
+      <div className="line-color">
+        <div className="line-left"></div>
+        <div className="line-right"></div>
+      </div>
+      
       <div className="navbar-bottom">
         <ul className="navbar-links">
           <CustomLink to="/home" className="navbar-links-list"><span className="navbar-link-text">Strona główna</span></CustomLink>

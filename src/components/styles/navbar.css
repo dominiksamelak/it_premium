@@ -7,6 +7,17 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+  transform: translateY(-100%); 
+  animation: slideIn 1s ease-out forwards; 
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
 }
 
 .navbar ul {
@@ -27,10 +38,10 @@
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: space-around; 
   width: 100%; 
   padding: 0; 
-  margin: 0; 
+  margin: 0 auto; 
   height: 52px;
   
 }
@@ -70,16 +81,19 @@
 }
 
 .logo {
-  padding-bottom: 44px;
-  z-index: 1001;
+  z-index: 1;
+  /* padding: 0 20px; Add some padding around logo if needed */
+  /* height: 52px; Adjust to fit your logo size */
+  margin-bottom: 52px;
 }
 
 .navbar-bottom {
   display: flex;
-  align-items: center;
-  justify-content: center; 
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 260px;
+  margin-right: 260px;
+    align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .navbar-top {
@@ -90,28 +104,6 @@
   height: 52px;
   position: relative;
 }
-
-.navbar-top::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 46%;
-  height: 1px;
-  background: linear-gradient(to right, #3D4656, 50%, #1F7AA9, #00cafc);
-
-}
-
-.navbar-top::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 47%;
-  height: 1px;
-  background: linear-gradient(to right, #00cafc, #1F7AA9, 50%, #3D4656);
-}
-
 
 .mappin-icon, .mail-icon, .phone-icon {
   margin-right: 6px;
@@ -153,6 +145,24 @@
 .navbar-phone-number span {
   font-family: "Just", serif;
   font-weight: 600; 
+}
+
+.line-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2px; /* Adjust thickness as needed */
+  background-image: linear-gradient(
+    to right,
+    #3D4656 0%,          /* Start color with smooth transition */
+    #67bbe6 20%,         /* Smooth transition to new color */
+    #00ADFC 40%,         /* Sharp cutoff start for #00ADFC */
+    white 50%,         /* Sharp cutoff end for #00ADFC */
+    #00ADFC 60%,         /* Repeat for mirrored sharp cutoff */
+    #67bbe6 80%,         /* Smooth transition back */
+    #3D4656 100%   
+  );
 }
 
 
