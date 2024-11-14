@@ -1,5 +1,5 @@
 import React from "react";
-import { priceListData } from "./pricelistData.jsx";
+import { priceListData } from "./PricelistData.jsx";
 
 const PriceList = () => {
   return (
