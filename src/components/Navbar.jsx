@@ -3,7 +3,7 @@ import "./styles/navbar.css"
 import mail from "./img/icons/Mail.png"
 import mapPin from "./img/icons/Map_Pin.png"
 import phone from "./img/icons/Phone.png"
-import facebook from "./img/icons/Social icons.png"
+import facebook from "./img/icons/social_icon.png"
 import logo from "./img/icons/logo_navbar.png"
 
 export default function Navbar({ isVisible }) {
