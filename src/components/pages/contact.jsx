@@ -2,7 +2,7 @@ import "../styles/contact.css"
 import mail from "../img/icons/Mail.png"
 import mapPin from "../img/icons/Map_Pin.png"
 import phone from "../img/icons/Phone.png"
-import facebook from "../img/icons/Social icons.png"
+import facebook from "../img/icons/social_icon.png"
 
 export default function Contact() {
   return(
