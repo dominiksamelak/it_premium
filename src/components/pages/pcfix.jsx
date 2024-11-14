@@ -1,7 +1,7 @@
 import PClanding from "../img/landing_photos/pcfix-main.png"
 import "../styles/pcfix.css"
 import PriceList from "../pricelist";
-import "../styles/PriceList.css";
+import "../styles/pricelist.css";
 
 export default function PC() {
   return(
