@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { priceListData } from "./PriceListData";
+import { priceListData } from "./PricelistData";
 
 const PriceList = ({ subpage: propSubpage }) => {
   // Check for direct prop first, fallback to useParams for dynamic routes
