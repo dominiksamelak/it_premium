@@ -57,7 +57,7 @@ export const priceListData = {
     { id: 15, name: "Usunięcie hasła z dysku", price: "od 200 zł" },
     { id: 16, name: "Kasowanie danych z dysku twardego", price: "od 200 zł" },
     { id: 17, name: "Inne usługi niewyszczególnione w cenniku", price: "Kontakt telefoniczny" },
-    { id: 18, name: "Analiza nośnika i odzyskanie danych po innych osobach lub firmach „data recovery”", price: "+100% ceny w danej kategorii utraty danych" },
+    { id: 18, name: "Analiza nośnika i odzyskanie danych po innych osobach lub firmach „data recovery”", price: "+100% ceny w danej kategorii" },
     { id: 19, name: "Odzyskanie danych przy analizie w trybie „ekspresowym”", price: "Koszt ustalany jest indywidualnie i zależny od stopnia skomplikowania przypadku (Usługa niezwiązana z ekspertyzą w trybie ekspresowym)" }
   ]
 

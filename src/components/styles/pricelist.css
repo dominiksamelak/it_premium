@@ -7,15 +7,12 @@
   margin-bottom: 20px;
 }
 
-.bold-text {
-  font-weight: bold;
-  font-size: 24px;
-}
+
 
 .highlight-item .price-item {
   border-bottom: 2px solid black; 
   margin-bottom: 16px;
-  margin-top: 16px;
+  margin-top: 26px;
   
 }
 
@@ -43,6 +40,7 @@
 .item-name {
   margin-left: 80px;
   max-width: 500px;
+  font-weight: 500;
 }
 
 .price {
@@ -67,3 +65,7 @@
   box-shadow: 0 4px rgba(0, 0, 0, 0.1);
 }
 
+.bold-text {
+  font-weight: bold;
+  font-size: 14px;
+}
