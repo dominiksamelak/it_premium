@@ -15,7 +15,7 @@ import Printers from "./components/pages/printerfix";
 import Loader from "./components/loader";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import PriceList from "./components/PriceList";
+import PriceList from "./components/Pricelist";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
