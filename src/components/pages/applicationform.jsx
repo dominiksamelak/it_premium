@@ -24,9 +24,7 @@ export default function ApplicationForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log('Form submitted:', formData);
-    // Reset form fields after submission
     setFormData({
       name: '',
       email: '',

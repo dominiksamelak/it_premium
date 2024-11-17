@@ -15,6 +15,7 @@ import Printers from "./components/pages/printerfix";
 import Loader from "./components/loader";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import PriceList from "./components/PriceList";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
             <Route path='/phonefix' element={<Phone />} />
             <Route path='/printerfix' element={<Printers />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path="/pricelist/:subpage" element={<PriceList />} />
           </Routes>
         </main>
         <Footer />

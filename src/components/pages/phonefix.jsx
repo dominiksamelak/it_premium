@@ -1,5 +1,6 @@
 import PhoneFix from "../img/landing_photos/phonefix-main.png"
 import "../styles/phonefix.css"
+import PriceList from "../Pricelist.jsx";
 
 export default function Phone() {
   return(
@@ -15,7 +16,7 @@ export default function Phone() {
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
       </span>
-      {/* <PriceList /> */}
+      <PriceList subpage="phonefix"/>
     </div>
   )
 }

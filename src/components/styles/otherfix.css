@@ -9,14 +9,14 @@
   }
 }
 
-.datarec-container {
+.otherfix-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   animation: fade-up 1s;
 }
 
-.datarec-landing-photo {
+.otherfix-landing-photo {
   display: block;
   margin: 0;
   align-items: center;
