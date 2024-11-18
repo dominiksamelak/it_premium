@@ -1,31 +1,40 @@
 .footer-container {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   margin-top: 20px;
+  max-width: 970px;
+  width: 100%;
+  align-items: center;
 }
 
 .footer-line {
   width: 100vw;
   background-image: linear-gradient(to left, #00cafc, #67bbe6, 50%, #728097);
   height: 2px;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 
 .footer-items {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 20px; 
-  width: 100%; 
+  justify-content: space-evenly; /* Spread the three sections evenly */
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 20px;
+  width: 100%;
   max-width: 970px;
-  margin: 0 auto;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 20px;
 }
 
-.footer-container .footer-items li {
-  margin-bottom: 8px;
+.footer-container .footer-items ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer-container .footer-items .logo-div {
+  padding-top: 8px;
 }
 
 .about-us, .services {
@@ -33,26 +42,11 @@
   flex-direction: column;
   margin-left: 60px;
   margin-right: 40px;
-  list-style: none;
 }
 
-.about-us {
-  margin-right: 10px;
-}
-
-.about-us span:hover, .services span:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.authors {
-  text-align: center; 
-  padding: 10px 0; 
-}
-
-.footer-bold {
-  font-weight: 600;
-  margin-bottom: 18px;
+.footer-titles {
+  margin-bottom: 28px;
+  padding-bottom: 2px;
 }
 
 .about-us a, .services a {
@@ -64,14 +58,37 @@
   text-decoration: underline;
 }
 
-.footer-container .application-form {
+.footer-bold {
+  font-weight: 600;
+}
+
+.application-form {
   background-image: linear-gradient(to right, #3D4656, #00ADFC);
   font-weight: 600;
-  border-radius: 25px; 
+  border-radius: 25px;
   color: white;
   width: 140px;
   text-align: center;
+  margin-top: 4px;
+}
+
+.location iframe {
+  border: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+}
+
+.authors {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.link {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
+.application-form a {
+  color: white !important;
+}

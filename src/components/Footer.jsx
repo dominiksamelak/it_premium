@@ -1,6 +1,6 @@
-import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import logo from "./img/icons/logo_footer.png";
 import "./styles/footer.css";
+import CustomLink from "./CustomLink.jsx";
 
 export default function Footer() {
   return (
@@ -8,10 +8,12 @@ export default function Footer() {
       <div className="footer-line"></div>
       <div className="footer-items">
         <div className="logo-div">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo"/>
         </div>
         <ul className="about-us">
-          <span className="footer-bold">O Nas</span>
+          <div className="footer-titles">
+            <CustomLink to="/aboutus"><span className="footer-bold">O Nas</span></CustomLink>
+          </div>
           <CustomLink to="/contact">Kontakt</CustomLink>
           <CustomLink to="/contact">Recenzje klientów</CustomLink>
           <CustomLink to="/realizations">Realizacje</CustomLink>
@@ -20,7 +22,9 @@ export default function Footer() {
           </CustomLink>
         </ul>
         <ul className="services">
-          <span className="footer-bold">Usługi</span>
+          <div className="footer-titles">
+            <CustomLink to="/services"><span className="footer-bold">Usługi</span></CustomLink>
+          </div>
           <CustomLink to="/pcfix">Naprawa komputerów</CustomLink>
           <CustomLink to="/phonefix">Naprawa telefonów</CustomLink>
           <CustomLink to="/printerfix">Naprawa drukarek</CustomLink>
@@ -42,21 +46,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="authors">
-        <span>Desing by Macaroni Pepperoni Realizacja by Harry Potter</span>
+        <span>Design by Macaroni Pepperoni, Realizacja by Harry Potter</span>
       </div>
     </div>
   );
-
-  function CustomLink({ to, children, ...props }) {
-    const resolvedPath = useResolvedPath(to);
-    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-    return (
-      <li className={isActive ? "active" : ""}>
-        <Link to={to} {...props}>
-          {children}
-        </Link>
-      </li>
-    );
-  }
 }

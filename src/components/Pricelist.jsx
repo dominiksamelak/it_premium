@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { priceListData } from "./PricelistData";
 
-const PriceList = ({ subpage: propSubpage }) => {
+const PriceList = ({ subpage: propSubpage }) => { 
   // Check for direct prop first, fallback to useParams for dynamic routes
   const { subpage: paramSubpage } = useParams();
   const subpage = propSubpage || paramSubpage;
@@ -11,7 +11,7 @@ const PriceList = ({ subpage: propSubpage }) => {
   const priceList = priceListData[subpage];
 
   if (!priceList) {
-    return <div>Price list not found!</div>; // Handle invalid or missing subpage
+    return <div>Brak cennika!</div>; // Handle invalid or missing subpage
   }
 
   return (
