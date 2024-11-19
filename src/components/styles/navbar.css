@@ -1,3 +1,21 @@
+h1 {
+  display: flex;
+  flex-direction: row;
+}
+
+h1:before,
+h1:after {
+  content: '';
+  flex: 1 1;
+  border-bottom: 2px solid blue;
+  margin: auto 30px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
 .navbar-container {
   display: flex;
   flex-direction: column;
@@ -106,14 +124,9 @@
   box-sizing: border-box;
 }
 
-.navbar-top::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(
+.navbar-mid {
+  /* content: ''; */
+  /* background: linear-gradient(
     to right,
     #3d4656 0%,
     #67bbe6 33%,
@@ -123,8 +136,29 @@
     #67bbe6 55%,
     #67bbe6 65%,
     #3d4656 100%
+  ); */
+  background: linear-gradient(
+    to right,
+    #3d4656 0%,
+    #67bbe6 33%,
+    #67bbe6 50%,
+    transparent 50%,
+    transparent 50%,
+    #67bbe6 67%,
+    #3d4656 100%
   );
-  transform: translateX(-50%);
+
+  background: linear-gradient(#fff, #fff) no-repeat,
+    linear-gradient(
+      to left,
+      #cea87c 45%,
+      #cea87c00 45%,
+      #cea87c00 55%,
+      #cea87c 55%
+    );
+
+  /* background: black; */
+  height: 2px;
 }
 
 .mappin-icon,
@@ -173,6 +207,6 @@
 }
 
 .navbar-phone-number span {
-  font-family: "Just", serif;
+  font-family: 'Just', serif;
   font-weight: 600;
 }
