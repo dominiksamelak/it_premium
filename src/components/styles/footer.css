@@ -10,7 +10,7 @@
 
 .footer-line {
   width: 100vw;
-  background-image: linear-gradient(to left, #00cafc, #67bbe6, 50%, #728097);
+  background-image: linear-gradient(to left, #00cafc, #67bbe6 50%, #728097);
   height: 2px;
   margin-bottom: 20px;
 }

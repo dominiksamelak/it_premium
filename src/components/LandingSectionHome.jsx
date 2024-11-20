@@ -1,6 +1,6 @@
 import CustomLink from "./CustomLink";
 import landingPhoto from "../components/img/landing_photos/landingpage-main.png";
-import "../components/styles/LandingSection.css"
+import "../components/styles/landingsection.css"
 
 function LandingSection() {
   return (

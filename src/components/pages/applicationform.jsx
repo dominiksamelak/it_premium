@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/applicationform.css';
+import axios from 'axios';
 
 export default function ApplicationForm() {
+  const [subject, setSubject] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,17 +16,65 @@ export default function ApplicationForm() {
     model: '',
     serialnumber: '',
     details: '',
-    acceptedTerms: false, 
+    acceptedTerms: false, // tracks whether the checkbox is checked
   });
 
+  const sendMail = (subject, message) => {
+    axios
+      .get("http://localhost:5000/", {
+        params: {
+          subject,
+          message,
+        },
+      })
+      .then(() => {
+        // success
+        console.log("Email sent successfully");
+      })
+      .catch(() => {
+        // failure
+        console.log("Failed to send email");
+      });
+  };
+
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const { name, value, type, checked } = e.target;
+    const updatedValue = type === 'checkbox' ? checked : value;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: updatedValue,
+    }));
+
+    if (name === "model") {
+      setSubject(value);
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+
+    // Construct the email message
+    const emailMessage = `
+      <strong>Name:</strong> ${formData.name}<br>
+      <strong>Email:</strong> ${formData.email}<br>
+      <strong>Phone:</strong> ${formData.phone}<br>
+      <strong>Street:</strong> ${formData.street}<br>
+      <strong>Zipcode:</strong> ${formData.zipcode}<br>
+      <strong>City:</strong> ${formData.city}<br>
+      <strong>Equipment:</strong> ${formData.equipment}<br>
+      <strong>Manufacturer:</strong> ${formData.manufacturer}<br>
+      <strong>Model:</strong> ${formData.model}<br>
+      <strong>Serial Number:</strong> ${formData.serialnumber}<br>
+      <strong>Details:</strong><br>
+      ${formData.details}
+    `;
+
+    setSubject(`${formData.model}`);
+
+    sendMail(`${formData.model}`, emailMessage);
+
+    // Reset form data after submission
     setFormData({
       name: '',
       email: '',
@@ -37,14 +87,14 @@ export default function ApplicationForm() {
       model: '',
       serialnumber: '',
       details: '',
-      acceptedTerms: false, 
+      acceptedTerms: false, // Reset acceptedTerms to false after submission
     });
   };
 
   const handlePhoneChange = (e) => {
-  const value = e.target.value.replace(/[^0-9]/g, '');
-  setFormData({ ...formData, phone: value });
-};
+    const value = e.target.value.replace(/[^0-9]/g, '');
+    setFormData({ ...formData, phone: value });
+  };
 
   return (
     <div className="form-container">
@@ -56,8 +106,7 @@ export default function ApplicationForm() {
             type="text"
             id="name"
             name="name"
-            placeholder='Imię i nazwisko*'
-
+            placeholder="Imię i nazwisko*"
             value={formData.name}
             onChange={handleChange}
             required
@@ -70,7 +119,7 @@ export default function ApplicationForm() {
             type="email"
             id="email"
             name="email"
-            placeholder='Adres e-mail*'
+            placeholder="Adres e-mail*"
             value={formData.email}
             onChange={handleChange}
             required
@@ -83,10 +132,10 @@ export default function ApplicationForm() {
             type="tel"
             id="phone"
             name="phone"
-            placeholder='Numer telefonu*'
+            placeholder="Numer telefonu*"
             value={formData.phone}
             onChange={handlePhoneChange}
-            pattern="[0-9]*" 
+            pattern="[0-9]*"
             inputMode="numeric"
             required
           />
@@ -98,7 +147,7 @@ export default function ApplicationForm() {
             type="text"
             id="street"
             name="street"
-            placeholder='Ulica*'
+            placeholder="Ulica*"
             value={formData.street}
             onChange={handleChange}
             required
@@ -135,14 +184,14 @@ export default function ApplicationForm() {
 
         <div className="form-group">
           <label htmlFor="equipment"></label>
-            <select
+          <select
             id="equipment"
             name="equipment"
-            placeholder='Typ sprzętu*'
+            placeholder="Typ sprzętu*"
             value={formData.equipment}
             onChange={handleChange}
             required
-            >
+          >
             <option value="">Wybierz typ sprzętu</option>
             <option value="Laptop">Laptop</option>
             <option value="Komputer stacjonarny">Komputer stacjonarny</option>
@@ -158,7 +207,7 @@ export default function ApplicationForm() {
             type="text"
             id="manufacturer"
             name="manufacturer"
-            placeholder='Producent*'
+            placeholder="Producent*"
             value={formData.manufacturer}
             onChange={handleChange}
             required
@@ -171,7 +220,7 @@ export default function ApplicationForm() {
             type="text"
             id="model"
             name="model"
-            placeholder='Model*'
+            placeholder="Model*"
             value={formData.model}
             onChange={handleChange}
             required
@@ -184,10 +233,9 @@ export default function ApplicationForm() {
             type="text"
             id="serialnumber"
             name="serialnumber"
-            placeholder='Numer seryjny'
+            placeholder="Numer seryjny"
             value={formData.serialnumber}
             onChange={handleChange}
-
           />
         </div>
 
@@ -196,12 +244,13 @@ export default function ApplicationForm() {
           <textarea
             id="details"
             name="details"
-            placeholder='Opis usterki*'
+            placeholder="Opis usterki*"
             value={formData.details}
             onChange={handleChange}
             required
           ></textarea>
         </div>
+
         <div className="form-group-checkbox">
           <label htmlFor="acceptedTerms" className="checkbox-label">
             <input
@@ -215,11 +264,13 @@ export default function ApplicationForm() {
             <span className="custom-checkbox"></span>
             Zapoznałem i zgadzam się z regulaminem IT-Premium Centrum Serwisowe
           </label>
+
           <div className="form-buttons">
-            <button type="submit">Wyślij</button>
+            <button type="submit" disabled={!formData.acceptedTerms}>
+              Wyślij
+            </button>
           </div>
         </div>
-
       </form>
     </div>
   );

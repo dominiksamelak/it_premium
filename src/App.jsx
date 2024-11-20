@@ -12,34 +12,24 @@ import DataRecovery from "./components/pages/Datarecovery";
 import OtherElectronics from "./components/pages/otherfix";
 import Phone from "./components/pages/phonefix";
 import Printers from "./components/pages/printerfix";
-import Loader from "./components/loader";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import PriceList from "./components/Pricelist";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
   const [isNavbarVisible, setNavbarVisible] = useState(false);
 
   useEffect(() => {
-    const loadingTimer = setTimeout(() => {
-      setIsLoading(false);  
-    }, 1300);
-
     const navbarTimer = setTimeout(() => {
       setNavbarVisible(true); 
     }, 1500);  
 
     return () => {
-      clearTimeout(loadingTimer);
       clearTimeout(navbarTimer);
     };
   }, []);
 
-  if (isLoading) {
-    return <Loader />; 
-  }
 
   return (
     <>

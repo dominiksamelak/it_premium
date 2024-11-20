@@ -103,6 +103,16 @@ h2 {
 .form-buttons button:hover {
   text-decoration: underline;
 }
+button:disabled {
+  background-color: #ccc; /* Light gray background */
+  color: #888; /* Lighter text color */
+  cursor: not-allowed; /* Change the cursor to indicate that the button is disabled */
+}
+
+button:disabled:hover {
+  text-decoration: none;
+}
+
 
 textarea {
   resize: none;
