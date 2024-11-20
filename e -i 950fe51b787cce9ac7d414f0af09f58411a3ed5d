@@ -1,0 +1,204 @@
+[33mcommit 950fe51b787cce9ac7d414f0af09f58411a3ed5d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 20 22:49:10 2024 +0100
+
+    .
+
+[33mcommit 9bade00cc7471928599439e483b0811efc429c2a[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 20 22:38:08 2024 +0100
+
+    .#
+
+[33mcommit a159a40e3e55c5629cdd4c729c8c7dceec2c33c6[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 20 22:36:09 2024 +0100
+
+    Mail setup changes and some styling changes
+
+[33mcommit c139798b3c3be5c0ea7bd9452ca9d8b96f24a906[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 20 00:11:15 2024 +0100
+
+    Mail test setup
+
+[33mcommit 0017dec06bb82740c2116488d7644eae0cdc0d9e[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Tue Nov 19 00:02:16 2024 +0100
+
+    Code cleanup and styling changes
+
+[33mcommit 320f7ab8cf9fbf462317689406f7d98d162b8a8f[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Sun Nov 17 23:31:10 2024 +0100
+
+    .#
+
+[33mcommit c183b3596e9bb0a079734d6494067c8c146b6c95[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Sun Nov 17 23:29:47 2024 +0100
+
+    .
+
+[33mcommit fc76ab727be14b0c3459842a70c56e5990dcb2a4[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Sun Nov 17 23:24:39 2024 +0100
+
+    Pricelist styling
+
+[33mcommit 598d6419e7f083f8192b685d1a5f6d00fd1f3002[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Sun Nov 17 23:19:44 2024 +0100
+
+    Price data updates, styling changes
+
+[33mcommit b3598a3ad6203ae54425feeef51801a9b5f04a07[m
+Author: HarryDSDS <samelakandroid@gmail.com>
+Date:   Sat Nov 16 19:14:22 2024 +0100
+
+    Styling changes and animations
+
+[33mcommit 3912745ac2fe99345dc78a6f67ec50c8f64a8157[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Thu Nov 14 22:22:54 2024 +0100
+
+    /#
+
+[33mcommit 7e80967950f034ce4d0cbc19273404cbd07dda60[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Thu Nov 14 22:21:36 2024 +0100
+
+    .
+
+[33mcommit 8f445eb5e8af79ad6a394c718166f7d992822d4e[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Thu Nov 14 22:20:23 2024 +0100
+
+    .
+
+[33mcommit 97a742f1e3ba6d4423fa001d4d0f884708b5cdd0[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Thu Nov 14 22:19:27 2024 +0100
+
+    .#
+
+[33mcommit 5da4816e5cb1aed67565f2c385b49fea9bc20d14[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Thu Nov 14 22:18:08 2024 +0100
+
+    .
+
+[33mcommit 247d2f507dbcf7adab88055968bcd2f88444cfa7[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Thu Nov 14 21:57:18 2024 +0100
+
+    Styling changes and animations
+
+[33mcommit 294316a3881119823bd353747f3f5aced5ab8196[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 13 23:30:11 2024 +0100
+
+    Styling changes and added application form page
+
+[33mcommit 5c95dc82d61d323d7339e9ce8341a38367e35ca7[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Tue Nov 12 23:39:52 2024 +0100
+
+    Added styling to contact page
+
+[33mcommit a43612c0300b58083ae8897a8120b66de4312c13[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Tue Nov 12 21:43:10 2024 +0100
+
+    Added last subpage for services
+
+[33mcommit 87f2a75b5aa08adfae5e0dbd83e2a27f66ed3ec9[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Tue Nov 12 21:39:40 2024 +0100
+
+    Added subpages
+
+[33mcommit b0e2672c3838cc8e14af65318b341a38d87a0f2e[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Mon Nov 11 19:55:19 2024 +0100
+
+    Added new subpages and styling
+
+[33mcommit 5aba09a6b1337f7b025245e54a8a816043421322[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 6 23:55:54 2024 +0100
+
+    Added services page
+
+[33mcommit f50cc5e83d1f0603e641762f69285ae19d85cf04[m
+Merge: a624497 fb6a28d
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 6 22:18:04 2024 +0100
+
+    Merge branch 'master' of https://github.com/dominiksamelak/it_premium
+
+[33mcommit a624497b032524b6e42b8083293b89620860dbfb[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 6 22:15:36 2024 +0100
+
+    CSS changes
+
+[33mcommit fb6a28da2f1ba2126a1d0a8a5d50aeb42243c374[m
+Author: Damian Debicki <damian.debicki@appunite.com>
+Date:   Wed Nov 6 22:12:07 2024 +0100
+
+    xoxo
+
+[33mcommit 903884965d13a3f5891861a23b4afb81fe3f82fb[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Wed Nov 6 21:46:04 2024 +0100
+
+    Google reviews
+
+[33mcommit e6dcdb56c54645ee7fad3c53497e31b3508bac2e[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Tue Nov 5 23:51:28 2024 +0100
+
+    Landing page and footer adjustments
+
+[33mcommit 887c9ba13c9b6bb8f55091658871e7b7546769a4[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Mon Nov 4 23:16:00 2024 +0100
+
+    Added landing page photo, description
+
+[33mcommit db8856202eff356ada1602d4dd351221ca28eab2[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Mon Nov 4 21:58:24 2024 +0100
+
+    Footer adjustment
+
+[33mcommit 63aaaf38d2709cda0441e28d9e65395b5eda0216[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Mon Nov 4 00:17:40 2024 +0100
+
+    Added a footer
+
+[33mcommit a5c89ff59ed48aaeec1d5ddbf53ab26bcde54b9c[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Sun Nov 3 23:39:03 2024 +0100
+
+    Navbar styling
+
+[33mcommit 82a165124aaf255293bc585be0e9e058242820df[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Sun Nov 3 22:59:25 2024 +0100
+
+    .
+
+[33mcommit 67532321508bfc57bc3f0b10d42cabbe24452d8b[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Sun Nov 3 22:55:22 2024 +0100
+
+    itpremium
+
+[33mcommit 01eb52ae06bde48a2548a1fa993467237575e9d7[m
+Author: HarryDSDS <dominiksamelak@gmail.com>
+Date:   Sun Nov 3 19:12:40 2024 +0100
+
+    Initialize project using Create React App
